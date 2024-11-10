@@ -1,0 +1,493 @@
+html{
+    min-height: 100%;
+    width: 100%;
+    scroll-behavior: smooth;
+  }
+  body{
+    margin: 0;
+    background-image:url('sky.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    background-position: center;
+  }
+  header{
+    background-color: #0e1f53;
+    color: white;
+    height: 170px;
+    width: 100%;
+  }
+  h1{
+    font-family: sans-serif;
+    font-style: oblique;
+    margin: 0;
+  }
+  .logo{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding-top:20px;
+  }
+  .logo1{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding-top:20px;
+  }
+  .bandnome{
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin-top: 2px;
+  }
+  .paises img{
+    width: 350px;
+    height: 380px;
+    border-radius: 16px;
+  }
+  .paises{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top:20px;
+    box-sizing: border-box;
+  }
+  #band{
+    width: 40px;
+    height: 40px;
+  }
+  span{
+    font-style: italic;
+    font-size: 32px;
+  }
+  .franca{
+    border-radius: 16px;
+    transition: transform 0.5s, box-shadow 0.5s;
+  }
+  .india{
+    border-radius: 16px;
+    transition: transform 0.5s, box-shadow 0.5s;
+  }
+  .inglaterra{
+    border-radius: 16px;
+    transition: transform 0.5s, box-shadow 0.5s;
+  }
+  .italia{
+    border-radius: 16px;
+    transition: transform 0.5s, box-shadow 0.5s;
+  }
+  .aviao{
+    width: 170px;
+    height: 90px;
+  }
+  ul{
+    list-style:none;
+    display:flex;
+    justify-content:center;
+    gap:100px;
+    font-family: sans-serif;
+    font-size: 20px;
+    padding: 0;
+  }
+  .centro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #reservar{
+    margin-top: 20px;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+    border: 1px solid #616161;
+    border-radius: 8px;
+    width: max-content;
+  }
+  .campo{
+    display: flex;
+    flex-direction: column;
+  }
+  .campo label{
+    font-size: 12px;
+    margin-bottom: 5px;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-style: oblique;
+  }
+  .campo input{
+    background-color: #ebebeb;
+  }
+  .campo input,
+  .campo button{
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+  }
+  .campo button{
+    background-color: rgb(30,31,120);
+    color: #ffffff;
+    cursor: pointer;
+    border: none;
+  }
+  .campo button:hover{
+    background-color:rgb(53, 55, 182);
+  }
+  #dvSlider{
+    width:1500px;
+    height:300px;
+    border:1px solid black;
+    margin-top: 40px;
+    margin-left: 30px;
+    margin-right: 30px;
+    position: relative;
+    transition: 2.5s;
+  }
+  .btnesquerda, .btndireita{
+    position: absolute;
+    top: 40%;
+    color: white;
+    border: 1px solid black;
+    background-color: rgb(30,31,120);
+    cursor: pointer;
+    border-radius: 32px;
+    width: 50px;
+    height: 50px;
+    font-size: 40px;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+  }
+  .btnesquerda{
+    left: 10px;
+  }
+  .btndireita{
+    right: 10px;
+  }
+  .textoimg{
+    font-family: Arial;
+    font-weight: bold;
+    font-style: oblique;
+    -webkit-text-stroke: 0.8px;
+    -webkit-text-stroke-color: black;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    padding-top: 4px;
+  }
+  .preto{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 25%;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  #textoreservar1{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    -webkit-text-stroke: 1.2px;
+    -webkit-text-stroke-color: black;
+    font-family:Tahoma, sans-serif;
+    font-size:50px;
+    font-style: italic;
+    margin-top: 20px;
+  }
+  #textoreservar2{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    -webkit-text-stroke: 1.2px;
+    -webkit-text-stroke-color: black;
+    font-family:Tahoma, sans-serif;
+    font-size:50px;
+    font-style: italic;
+    margin-top: 20px;
+  }
+  hr{
+  width: 250px;
+  border: 1px solid rgb(186, 186, 186);
+  box-shadow: 0 0 1px 0;
+  }
+  #indiapreços{
+    background-color: #dee3e1;
+    border-radius: 16px;
+    border: 1px solid black;
+    width: 612px;
+    height: 337px;
+    color: black;
+    font-size: 26px;
+    font-family: sans-serif;
+    font-style: oblique;
+    box-shadow:inset 0px 0px 20px 4px rgba(0, 0, 0, 1);
+    padding: 20px;
+    margin-top: 20px;
+  }
+  #parispreços{
+    background-color: #dee3e1;
+    border-radius: 16px;
+    border: 1px solid black;
+    width: 612px;
+    height: 337px;
+    color: black;
+    font-size: 26px;
+    font-family: sans-serif;
+    font-style: oblique;
+    box-shadow:inset 0px 0px 20px 4px rgba(0, 0, 0, 1);
+    padding: 20px;
+    margin-top: 20px;
+  }
+  #londrespreços{
+    background-color: #dee3e1;
+    border-radius: 16px;
+    border: 1px solid black;
+    width: 612px;
+    height: 337px;
+    color: black;
+    font-size: 26px;
+    font-family: sans-serif;
+    font-style: oblique;
+    box-shadow:inset 0px 0px 20px 4px rgba(0, 0, 0, 1);
+    padding: 20px;
+    margin-top: 20px;
+  }
+  #itapreços{
+    background-color: #dee3e1;
+    border-radius: 16px;
+    border: 1px solid black;
+    width: 612px;
+    height: 337px;
+    color: black;
+    font-size: 26px;
+    font-family: sans-serif;
+    font-style: oblique;
+    box-shadow:inset 0px 0px 20px 4px rgba(0, 0, 0, 1);
+    padding: 20px;
+    margin-top: 20px;
+  }
+  footer{
+    margin-top: 20px;
+    background-color:#0e1f53;
+    color: white;
+    height: 200px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    justify-content: center;
+    gap: 100px;
+  }
+  .espaço{
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+  }
+  .padrao{
+    margin-top: 20px;
+    border-radius: 20px;
+    width: 612px;
+    height: 377px;
+    border: 1px solid black;
+    cursor: pointer;
+  }
+  .negrito{
+    font-weight: bold;
+    text-align: center;
+  }
+  .icon1{
+    border: 1px solid #0750ed;
+    border-radius: 50%;
+    padding: 10px;
+    color: #0750ed;
+    font-size: 25px;
+  }
+  .icon2{
+    color:#1DA1F2;
+    border: 1px solid #1DA1F2;
+    border-radius: 50%;
+    padding: 10px;
+    font-size: 25px;
+  }
+  .icon3{
+    border: 1px solid #d62976;
+    border-radius: 50%;
+    padding: 10px;
+    color: #d62976;
+    font-size: 25px;
+  }
+  .icon4{
+    border: 1px solid #25D366;
+    border-radius: 50%;
+    padding: 10px;
+    color: #25D366;
+    font-size: 25px;
+  }
+  .icon5{
+    border: 1px solid #0088cc;
+    border-radius: 50%;
+    padding: 10px;
+    color: #0088cc;
+    font-size: 25px;
+  }
+  .titulo{
+    font-size: 32px;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-style: oblique;
+  }
+  #imagemvirar {
+    perspective: 1000px;
+  }
+  #imagem {
+    transition: transform 0.7s;
+    transform-style: preserve-3d;
+  }
+  #imagem.flipped {
+    transform: rotateY(180deg);
+  }
+  #imagemvirar1 {
+    perspective: 1000px;
+  }
+  #imagem1 {
+    transition: transform 0.7s;
+    transform-style: preserve-3d;
+  }
+  #imagem1.flipped {
+    transform: rotateY(180deg);
+  }
+  #imagemvirar2 {
+    perspective: 1000px;
+  }
+  #imagem2 {
+    transition: transform 0.7s;
+    transform-style: preserve-3d;
+  }
+  #imagem2.flipped {
+    transform: rotateY(180deg);
+  }
+  #imagemvirar3 {
+    perspective: 1000px;
+  }
+  #imagem3{
+    transition: transform 0.7s;
+    transform-style: preserve-3d;
+  }
+  #imagem3.flipped {
+    transform: rotateY(180deg);
+  }
+  a{
+    color: white;
+    text-decoration:none;
+  }
+  a:hover{
+    text-decoration:underline;
+  }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .none{
+        display: none;
+    }
+    #dvSlider{
+      display:none;
+    }
+    #reservar{
+      display: block;
+    }
+    header{
+      width: 100%;
+    }
+    #parispreços{
+      display: none;
+    }
+    #indiapreços{
+      display: none;
+    }
+    #londrespreços{
+      display: none;
+    }
+    #itapreços{
+      display: none;
+    }
+    .paises{
+      display: block;
+      margin-top: 20px;
+      box-sizing: border-box;
+      margin-left: 200px;
+      margin-right: 200px;
+    }
+    ul{
+      gap: 50px;
+    }
+    .franca, .italia, .inglaterra, .india{
+      width: 350px;
+      height: 430px;
+      margin-top: 10px;
+    }
+  }
+  @media (max-width: 440px) {
+    .none{
+      display: none;
+  }
+  #dvSlider{
+    display:none;
+  }
+  #reservar{
+    display: block;
+  }
+  header{
+    width: 100%;
+  }
+  #parispreços{
+    display: none;
+  }
+  #indiapreços{
+    display: none;
+  }
+  #londrespreços{
+    display: none;
+  }
+  #itapreços{
+    display: none;
+  }
+  .paises{
+    display: block;
+    margin-top: 20px;
+    box-sizing: border-box;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+  .padrao{
+    width: 350px;
+    height: 420px;
+  }
+  ul{
+    gap: 20px;
+  }
+  .franca, .italia, .inglaterra, .india{
+    width: 350px;
+    height: 430px;
+    margin-top: 10px;
+  }
+  .logo1{
+    display:block;
+    justify-content:center;
+    align-items:center;
+    padding-top:20px;
+  }
+  footer{
+    margin-top: 20px;
+    background-color:#0e1f53;
+    color: white;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    justify-content: center;
+    gap: 0;
+  }
+  .titulo{
+    font-size: 25px;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-style: oblique;
+  }
+  }

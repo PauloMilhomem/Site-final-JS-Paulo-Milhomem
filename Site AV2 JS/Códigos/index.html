@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>RioAirLines</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
+  integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" 
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img class="aviao" alt="Logo avião" src="plane.png"/>
+    <h1>RioAirLines</h1>
+    </div>
+    <div class="listasite">
+      <ul>
+        <a href="#dvSlider"><li class="none">Aviões</li></a>
+        <a href="#textoreservar1"><li>Reservar</li></a>
+        <a href="#textoreservar2"><li>Destinos</li></a>
+        <a href="cadastro.html"><li>Login</li></a>
+        <a href="ajuda.html"><li class="sobre">Sobre</li></a>
+      </ul>
+    </div>
+  </header>
+   <div class="centro">
+    <div id='dvSlider' onmouseover='parar()' onmouseout='iniciaSlider()'>
+      <div class="preto"><div class='textoimg'>Voe com a RioAirLines e tenha uma experiência única!</div></div>
+      <input type='button' value='<' class='btnesquerda' onclick='troca(-1)' />
+      <input type='button' value='>' class='btndireita' onclick='troca(1)' />
+    </div>
+    </div>
+  <div id='textoreservar1'>Reservar</div>
+  <hr>
+  <div class='centro'>
+   <div id="reservar">
+    <div class="campo">
+        <label for="do">Do</label>
+        <input type="text" id="do" placeholder="Rio De Janeiro">
+    </div>
+    <div class="campo">
+        <label for="to">Para</label>
+        <input type="text" id="to" placeholder="Digite o destino">
+    </div>
+    <div class="campo">
+        <label for="dataida">Data de ida</label>
+        <input type="date" id="dataida" placeholder="Digite a data de ida:">
+    </div>
+    <div class="campo">
+        <label for="datavolta">Data de volta</label>
+        <input type="date" id="datavolta" placeholder="Digite a data de volta:">
+    </div>
+    <div class="campo">
+        <label for="passageiro">Passageiros</label>
+        <input type="number" id="passageiros" placeholder="1 Passageiro">
+    </div>
+    <div class="campo">
+        <button>Buscar voos</button>
+    </div>
+  </div>
+  </div>
+  <div id='textoreservar2'>Destinos</div>
+  <hr>
+  <div class="paises">
+    <div class="franca" onmouseover="expandCard(this)" onmouseout="shrinkCard(this)">
+     <a href="#parispreços"><img src="paris.jpg" title="Paris" alt="Paris"/></a>
+      <div class='bandnome'>
+     <span>Paris</span>
+     <img id='band' src='franband.png' alt="Bandeira da França"/>
+      </div>
+    </div>
+    <div class='india' onmouseover='expandCard(this)' onmouseout='shrinkCard(this)'>
+      <a href="#indiapreços"><img src='india.jpg' title="Agra" alt="Índia"/></a>
+      <div class='bandnome'>
+      <span>Agra</span>
+      <img id='band' src='indiaband.png' alt="Bandeira da Índia"/>
+      </div>
+    </div>
+    <div class='inglaterra' onmouseover='expandCard(this)' onmouseout='shrinkCard(this)'>
+      <a href="#londrespreços"><img src='londressal.jpg' title="Londres" alt="Londres"/></a>
+      <div class='bandnome'>
+      <span>Londres</span>
+      <img id='band' src='inglaband.png' alt="Bandeira da Inglaterra"/>
+      </div>
+    </div>
+    <div class='italia' onmouseover='expandCard(this)' onmouseout='shrinkCard(this)'>
+      <a href="#itapreços"><img src='ita.jpg' title="Roma" alt="Itália"/></a>
+      <div class='bandnome'>
+      <span>Roma</span>
+      <img id='band' src='itaband.png' alt="Bandeira da Itália"/>
+      </div>
+    </div>
+  </div>
+  <div class="espaço">
+  <div id="parispreços">
+    <p>Admire a majestosa Torre Eiffel, passeie pelas charmosas ruas de Montmartre e encante-se com a arte icônica do Louvre. De gastronomia requintada a boutiques elegantes, Paris oferece uma experiência romântica e inesquecível!</p>
+    <p class="negrito">Clique em Paris para ver os preços</p>
+  </div>
+    <div id="imagemvirar">
+   <img id="imagem" class="padrao" src="pariscima.jpg" alt="Paris vista de cima">
+    </div>
+  </div>
+  <div class="espaço">
+  <div id="indiapreços">
+    <p>Explore a rica herança cultural da Índia com visitas ao Forte de Agra e ao fascinante mercado local, mergulhando na história e beleza arquitetônica que definem esta cidade deslumbrante!</p>
+    <p class="negrito">Clique em Agra para ver os preços</p>
+  </div>
+    <div id="imagemvirar1">
+   <img id="imagem1" class="padrao" src="agracima.jpg" alt="Agra vista de cima">
+    </div>
+  </div>
+  <div class="espaço">
+  <div id="londrespreços">
+    <p>Descubra os famosos marcos como o Big Ben, o Palácio de Buckingham e a Torre de Londres, enquanto aproveita os museus, teatros e a vida noturna animada que fazem de Londres um dos destinos mais emocionantes do mundo!</p>
+    <p class="negrito">Clique em Londres para ver os preços</p>
+  </div>
+    <div id="imagemvirar2">
+  <img id="imagem2" class="padrao" src="londrescima.jpg" alt="Londres vista de cima">
+    </div>
+  </div>
+  <div class="espaço">
+  <div id="itapreços">
+    <p> Passeie pelo Coliseu, maravilhe-se com a arte renascentista da Capela Sistina e saboreie autênticas massas italianas em um restaurante local. Roma é um convite para se apaixonar pela cultura e pela culinária!</p>
+      <p class="negrito">Clique em Roma para ver os preços</p>
+  </div>
+    <div id="imagemvirar3">
+  <img id="imagem3" class="padrao" src="romacima.jpg" alt="Roma vista de cima">
+  </div>
+  </div>
+  <footer>
+    <div class="icons">
+      <a href="https://www.facebook.com/" title="Facebook" target=“_blank”><i class="icon1 fa-brands fa-facebook"></i></a>
+      <a href="https://x.com/" title="Twitter" target=“_blank”><i class="icon2 fa-brands fa-twitter"></i></a>
+      <a href="https://www.instagram.com/" title="Instagram" target=“_blank”><i class="icon3 fa-brands fa-instagram"></i></a>
+      <a href="https://www.whatsapp.com/?lang=pt_br" title="WhatsApp" target=“_blank”><i class="icon4 fa-brands fa-whatsapp"></i></a>
+      <a href="https://web.telegram.org/k/" title="Telegram" target=“_blank”><i class="icon5 fa-brands fa-telegram"></i></a>
+    </div>
+    <div>
+      <div class="logo1">
+        <a href="#"><img class="aviao" alt="Logo avião"src="plane.png"/></a>
+      <p class="titulo">RioAirLines</p>
+      </div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
